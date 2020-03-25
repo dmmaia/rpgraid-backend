@@ -2,7 +2,7 @@ const Table = require('../models/Table');
 
 module.exports = {
 	async store(req, res){
-        const {tableName,  UserId, _id } = req.body;
+        const {tableName,  UserId, _id, del } = req.body;
 
         let table = await Table.find({UserId});
 
